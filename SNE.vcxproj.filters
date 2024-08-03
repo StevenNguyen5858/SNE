@@ -13,10 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="sne">
+      <UniqueIdentifier>{9ac6e0f5-e8a7-49d1-b3e5-dd93232716f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="sne-pde-driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sne-pde.h">
+      <Filter>sne</Filter>
+    </ClInclude>
+    <ClInclude Include="sne-header.h">
+      <Filter>sne</Filter>
+    </ClInclude>
+    <ClInclude Include="sne-demos.h">
+      <Filter>sne</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
