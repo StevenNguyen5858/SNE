@@ -1,0 +1,5 @@
+void imageDemo() {
+    image("sne-resources/cat.jpg", 10, 100, 380, 213);
+
+    activeWindow->display();
+}

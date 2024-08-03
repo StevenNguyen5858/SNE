@@ -14,7 +14,8 @@ int main() {
     sneSettings();
 
     //primativeShapesDemo();
-    textDemo();
+    //textDemo();
+    imageDemo();
 
     while (activeWindow->isOpen()) {
         sf::Event e;

@@ -1,6 +1,7 @@
 #pragma once
 #include "sne-shapes.h"
 #include "sne-text.h"
+#include "sne-image.h"
 
 
 void primativeShapesDemo() {
@@ -76,6 +77,12 @@ void textDemo() {
 
     textFont(gothamBoldItalic);
     text("Hello World", 10, 330, 400, 50, alignment::centerY);
+
+    activeWindow->display();
+}
+
+void imageDemo() {
+    image("sne-resources/cat.jpg", 10, 100, 380, 213);
 
     activeWindow->display();
 }

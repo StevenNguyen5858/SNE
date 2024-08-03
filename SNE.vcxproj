@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="sne-demos.h" />
     <ClInclude Include="sne-header.h" />
+    <ClInclude Include="sne-image.h" />
     <ClInclude Include="sne-pde.h" />
     <ClInclude Include="sne-shapes.h" />
     <ClInclude Include="sne-text.h" />
