@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include "sne-header.h"
-#include <thread>
 using namespace std;
 
 

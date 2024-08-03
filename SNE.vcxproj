@@ -145,6 +145,7 @@
     <ClInclude Include="sne-demos.h" />
     <ClInclude Include="sne-header.h" />
     <ClInclude Include="sne-pde.h" />
+    <ClInclude Include="sne-shapes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
