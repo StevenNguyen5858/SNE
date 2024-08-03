@@ -1,4 +1,6 @@
 void primativeShapesDemo() {
+    stroke(255);
+
     fill(134, 4, 4);
     rect(30, 30, 50, 50);
 

@@ -13,6 +13,6 @@ map<string, sf::RenderWindow*> windows;
 sf::RenderWindow* activeWindow = &mainWindow;
 
 
-sf::Color current_fill = sf::Color(255, 255, 255, 255);
-sf::Color current_stroke = sf::Color(0, 0, 0, 255);
-int current_stroke_weight = 1;
+sf::Color currentFill = sf::Color(255, 255, 255, 255);
+sf::Color currentStroke = sf::Color(0, 0, 0, 255);
+int currentStrokeWeight = 1;

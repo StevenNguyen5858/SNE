@@ -1,8 +1,11 @@
 #pragma once
 #include "sne-shapes.h"
+#include "sne-text.h"
 
 
 void primativeShapesDemo() {
+    stroke(255);
+
     fill(134, 4, 4);
     rect(30, 30, 50, 50);
 
@@ -55,6 +58,24 @@ void primativeShapesDemo() {
 
     fill(81, 4, 4);
     line(330, 355, 380, 355, alpha);
+
+    activeWindow->display();
+}
+
+void textDemo() {
+    textFont(gothamLight);
+    textSize(60);
+
+    text("Hello World", 10, 30, 400, 50, alignment::centerY);
+    
+    // Unlike fill, textFont reverts to a default after each use of text
+    text("Hello World", 10, 130, 400, 50, alignment::centerY);
+
+    textFont(gothamBold);
+    text("Hello World", 10, 230, 400, 50, alignment::centerY);
+
+    textFont(gothamBoldItalic);
+    text("Hello World", 10, 330, 400, 50, alignment::centerY);
 
     activeWindow->display();
 }

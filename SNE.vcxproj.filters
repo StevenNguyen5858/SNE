@@ -35,5 +35,8 @@
     <ClInclude Include="sne-shapes.h">
       <Filter>sne</Filter>
     </ClInclude>
+    <ClInclude Include="sne-text.h">
+      <Filter>sne</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

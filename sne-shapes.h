@@ -4,52 +4,52 @@
 
 void fill(int r, int g, int b, int a) {
 	sf::Color color = sf::Color(r, g, b, a);
-	current_fill = color;
+	currentFill = color;
 }
 void fill(int r, int g, int b) {
 	sf::Color color = sf::Color(r, g, b, 255);
-	current_fill = color;
+	currentFill = color;
 }
 void fill(int greyValue) {
-	current_fill = sf::Color(greyValue, greyValue, greyValue, 255);
+	currentFill = sf::Color(greyValue, greyValue, greyValue, 255);
 }
 void no_fill() {
-	current_fill = sf::Color::Transparent;
+	currentFill = sf::Color::Transparent;
 }
 
 void stroke(int r, int g, int b, int a) {
 	sf::Color color = sf::Color(r, g, b, a);
-	current_stroke = color;
+	currentStroke = color;
 }
 void stroke(int r, int g, int b) {
 	sf::Color color = sf::Color(r, g, b, 255);
-	current_stroke = color;
+	currentStroke = color;
 }
 void stroke(int greyValue) {
-	current_stroke = sf::Color(greyValue, greyValue, greyValue, 255);
+	currentStroke = sf::Color(greyValue, greyValue, greyValue, 255);
 }
 void no_stroke() {
-	current_stroke = sf::Color::Transparent;
+	currentStroke = sf::Color::Transparent;
 }
 void stroke_weight(int stroke_weight) {
-	current_stroke_weight = stroke_weight;
+	currentStrokeWeight = stroke_weight;
 }
 
 sf::RectangleShape r;
 void rect(double x, double y, double w, double h) {
 	r.setSize(sf::Vector2f(w, h));
 	r.setPosition(x, y);
-	r.setFillColor(current_fill);
-	r.setOutlineThickness(current_stroke_weight);
-	r.setOutlineColor(current_stroke);
+	r.setFillColor(currentFill);
+	r.setOutlineThickness(currentStrokeWeight);
+	r.setOutlineColor(currentStroke);
 	activeWindow->draw(r);
 }
 void rect(double x, double y, double w, double h, int alpha) {
 	r.setSize(sf::Vector2f(w, h));
 	r.setPosition(x, y);
-	r.setFillColor(sf::Color(current_fill.r, current_fill.g, current_fill.b, alpha));
-	r.setOutlineThickness(current_stroke_weight);
-	r.setOutlineColor(current_stroke);
+	r.setFillColor(sf::Color(currentFill.r, currentFill.g, currentFill.b, alpha));
+	r.setOutlineThickness(currentStrokeWeight);
+	r.setOutlineColor(currentStroke);
 	activeWindow->draw(r);
 }
 
@@ -58,18 +58,18 @@ void circle(double x, double y, double d) {
 	c.setRadius(d / 2);
 	c.setPointCount(50);
 	c.setPosition(x, y);
-	c.setFillColor(current_fill);
-	c.setOutlineColor(current_stroke);
-	c.setOutlineThickness(current_stroke_weight);
+	c.setFillColor(currentFill);
+	c.setOutlineColor(currentStroke);
+	c.setOutlineThickness(currentStrokeWeight);
 	activeWindow->draw(c);
 }
 void circle(double x, double y, double d, int alpha) {
 	c.setRadius(d / 2);
 	c.setPointCount(50);
 	c.setPosition(x, y);
-	c.setFillColor(sf::Color(current_fill.r, current_fill.g, current_fill.b, alpha));
-	c.setOutlineColor(current_stroke);
-	c.setOutlineThickness(current_stroke_weight);
+	c.setFillColor(sf::Color(currentFill.r, currentFill.g, currentFill.b, alpha));
+	c.setOutlineColor(currentStroke);
+	c.setOutlineThickness(currentStrokeWeight);
 	activeWindow->draw(c);
 }
 
@@ -77,7 +77,7 @@ vector<sf::Vertex> vertices;
 sf::Vertex v;
 void triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
 	vertices.clear();
-	v.color = current_fill;
+	v.color = currentFill;
 
 	v.position = sf::Vector2f(x1, y1);
 	vertices.push_back(v);
@@ -91,8 +91,8 @@ void triangle(double x1, double y1, double x2, double y2, double x3, double y3) 
 }
 void triangle(double x1, double y1, double x2, double y2, double x3, double y3, int alpha) {
 	vertices.clear();
-	fill(current_fill.r, current_fill.g, current_fill.b, alpha);
-	v.color = current_fill;
+	fill(currentFill.r, currentFill.g, currentFill.b, alpha);
+	v.color = currentFill;
 
 	v.position = sf::Vector2f(x1, y1);
 	vertices.push_back(v);
@@ -106,7 +106,7 @@ void triangle(double x1, double y1, double x2, double y2, double x3, double y3, 
 }
 void line(double x1, double y1, double x2, double y2) {
 	vertices.clear();
-	v.color = current_fill;
+	v.color = currentFill;
 
 	v.position = sf::Vector2f(x1, y1);
 	vertices.push_back(v);
@@ -118,8 +118,8 @@ void line(double x1, double y1, double x2, double y2) {
 }
 void line(double x1, double y1, double x2, double y2, int alpha) {
 	vertices.clear();
-	fill(current_fill.r, current_fill.g, current_fill.b, alpha);
-	v.color = current_fill;
+	fill(currentFill.r, currentFill.g, currentFill.b, alpha);
+	v.color = currentFill;
 
 	v.position = sf::Vector2f(x1, y1);
 	vertices.push_back(v);

@@ -5,6 +5,7 @@ using namespace std;
 
 
 void sneSettings() {
+    loadFonts();
     mainWindow.create(sf::VideoMode(400, 400), "SNE Application Template");
     windows["main"] = &mainWindow;
 }
@@ -12,7 +13,8 @@ void sneSettings() {
 int main() {
     sneSettings();
 
-    primativeShapesDemo();
+    //primativeShapesDemo();
+    textDemo();
 
     while (activeWindow->isOpen()) {
         sf::Event e;
