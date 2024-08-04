@@ -6,6 +6,14 @@
 
 void primativeShapesDemo() {
     stroke(255);
+    int alpha = 255;
+
+
+    line(30, 20, 80, 20);
+    line(130, 20, 180, 20);
+    line(230, 20, 280, 20);
+    line(330, 20, 380, 20);
+
 
     fill(134, 4, 4);
     rect(30, 30, 50, 50);
@@ -17,9 +25,10 @@ void primativeShapesDemo() {
     triangle(230, 30, 280, 30, 255, 80);
 
     fill(81, 4, 4);
-    line(330, 55, 380, 55);
+    roundedRectangle(330, 30, 50, 50, 10);
 
-    int alpha = 175;
+
+    alpha = 175;
     fill(134, 4, 4);
     rect(30, 130, 50, 50, alpha);
 
@@ -30,7 +39,7 @@ void primativeShapesDemo() {
     triangle(230, 130, 280, 130, 255, 180, alpha);
 
     fill(81, 4, 4);
-    line(330, 155, 380, 155, alpha);
+    roundedRectangle(330, 130, 50, 50, 15);
 
 
     alpha = 100;
@@ -44,7 +53,7 @@ void primativeShapesDemo() {
     triangle(230, 230, 280, 230, 255, 280, alpha);
 
     fill(81, 4, 4);
-    line(330, 255, 380, 255, alpha);
+    roundedRectangle(330, 230, 50, 50, 20);
 
 
     alpha = 25;
@@ -58,7 +67,8 @@ void primativeShapesDemo() {
     triangle(230, 330, 280, 330, 255, 380, alpha);
 
     fill(81, 4, 4);
-    line(330, 355, 380, 355, alpha);
+    roundedRectangle(330, 330, 50, 50, 60);
+
 
     activeWindow->display();
 }

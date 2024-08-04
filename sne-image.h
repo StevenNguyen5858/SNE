@@ -37,9 +37,9 @@ void image(string imgPath, double x, double y, double new_width, double new_heig
 			sprite.setTexture(tempTexture);
 			loadedSprites[imgPath] = sprite;
 
-			double scale_w = (float)(new_width) / sprite.getTextureRect().getSize().x;
-			double scale_h = (float)(new_height) / sprite.getTextureRect().getSize().y;
-			sprite.setScale(sf::Vector2f(scale_w, scale_h));
+			double scaleW = (float)(new_width) / sprite.getTextureRect().getSize().x;
+			double scaleH = (float)(new_height) / sprite.getTextureRect().getSize().y;
+			sprite.setScale(sf::Vector2f(scaleW, scaleH));
 
 			activeWindow->draw(sprite);
 		}
@@ -48,9 +48,9 @@ void image(string imgPath, double x, double y, double new_width, double new_heig
 		sprite = loadedSprites[imgPath];
 		sprite.setPosition(sf::Vector2f(int(x), int(y)));
 
-		double scale_w = (float)(new_width) / sprite.getTextureRect().getSize().x;
-		double scale_h = (float)(new_height) / sprite.getTextureRect().getSize().y;
-		sprite.setScale(sf::Vector2f(scale_w, scale_h));
+		double scaleW = (float)(new_width) / sprite.getTextureRect().getSize().x;
+		double scaleH = (float)(new_height) / sprite.getTextureRect().getSize().y;
+		sprite.setScale(sf::Vector2f(scaleW, scaleH));
 
 		activeWindow->draw(sprite);
 	}
@@ -65,14 +65,14 @@ void image(sf::Image* img, double x, double y) {
 }
 
 // Draws an sf::image object to buffer with given width and height. Images scale best by factors of two.
-void image(sf::Image* img, double x, double y, double new_width, double new_height) {
+void image(sf::Image* img, double x, double y, double newWidth, double newHeight) {
 	sprite.setPosition(sf::Vector2f(int(x), int(y)));
 	tempTexture.loadFromImage(*img);
 	sprite.setTexture(tempTexture);
 
-	double scale_w = (float)(new_width) / img->getSize().x;
-	double scale_h = (float)(new_height) / img->getSize().y;
-	sprite.setScale(sf::Vector2f(scale_w, scale_h));
+	double scaleW = (float)(newWidth) / img->getSize().x;
+	double scaleH = (float)(newHeight) / img->getSize().y;
+	sprite.setScale(sf::Vector2f(scaleW, scaleH));
 
 	activeWindow->draw(sprite);
 }

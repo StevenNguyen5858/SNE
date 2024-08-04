@@ -13,9 +13,9 @@ void sneSettings() {
 int main() {
     sneSettings();
 
-    //primativeShapesDemo();
+    primativeShapesDemo();
     //textDemo();
-    imageDemo();
+    //imageDemo();
 
     while (activeWindow->isOpen()) {
         sf::Event e;
