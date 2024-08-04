@@ -142,9 +142,12 @@
     <ClCompile Include="sne-pde-driver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sne-app.h" />
+    <ClInclude Include="sne-application-header.h" />
     <ClInclude Include="sne-demos.h" />
-    <ClInclude Include="sne-header.h" />
+    <ClInclude Include="sne-processing-header.h" />
     <ClInclude Include="sne-image.h" />
+    <ClInclude Include="sne-page.h" />
     <ClInclude Include="sne-pde.h" />
     <ClInclude Include="sne-shapes.h" />
     <ClInclude Include="sne-text.h" />

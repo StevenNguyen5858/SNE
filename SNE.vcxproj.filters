@@ -13,7 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="sne">
+    <Filter Include="sne-application">
+      <UniqueIdentifier>{ef92e6c7-85ce-4cff-a2a0-813c15dab3fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sne-processing">
       <UniqueIdentifier>{9ac6e0f5-e8a7-49d1-b3e5-dd93232716f9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,22 +27,31 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sne-pde.h">
-      <Filter>sne</Filter>
+      <Filter>sne-processing</Filter>
     </ClInclude>
-    <ClInclude Include="sne-header.h">
-      <Filter>sne</Filter>
+    <ClInclude Include="sne-processing-header.h">
+      <Filter>sne-processing</Filter>
     </ClInclude>
     <ClInclude Include="sne-demos.h">
-      <Filter>sne</Filter>
+      <Filter>sne-processing</Filter>
     </ClInclude>
     <ClInclude Include="sne-shapes.h">
-      <Filter>sne</Filter>
+      <Filter>sne-processing</Filter>
     </ClInclude>
     <ClInclude Include="sne-text.h">
-      <Filter>sne</Filter>
+      <Filter>sne-processing</Filter>
     </ClInclude>
     <ClInclude Include="sne-image.h">
-      <Filter>sne</Filter>
+      <Filter>sne-processing</Filter>
+    </ClInclude>
+    <ClInclude Include="sne-app.h">
+      <Filter>sne-application</Filter>
+    </ClInclude>
+    <ClInclude Include="sne-page.h">
+      <Filter>sne-application</Filter>
+    </ClInclude>
+    <ClInclude Include="sne-application-header.h">
+      <Filter>sne-application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
