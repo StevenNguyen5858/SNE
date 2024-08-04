@@ -19,6 +19,9 @@
     <Filter Include="sne-processing">
       <UniqueIdentifier>{9ac6e0f5-e8a7-49d1-b3e5-dd93232716f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="paging">
+      <UniqueIdentifier>{e0da4423-3684-4555-aa93-30274c50fecb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sne-pde-driver.cpp">
@@ -52,6 +55,15 @@
     </ClInclude>
     <ClInclude Include="sne-application-header.h">
       <Filter>sne-application</Filter>
+    </ClInclude>
+    <ClInclude Include="router.h">
+      <Filter>paging</Filter>
+    </ClInclude>
+    <ClInclude Include="template-page.h">
+      <Filter>paging</Filter>
+    </ClInclude>
+    <ClInclude Include="template-page2.h">
+      <Filter>paging</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

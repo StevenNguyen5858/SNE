@@ -142,6 +142,7 @@
     <ClCompile Include="sne-pde-driver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="router.h" />
     <ClInclude Include="sne-app.h" />
     <ClInclude Include="sne-application-header.h" />
     <ClInclude Include="sne-demos.h" />
@@ -151,6 +152,8 @@
     <ClInclude Include="sne-pde.h" />
     <ClInclude Include="sne-shapes.h" />
     <ClInclude Include="sne-text.h" />
+    <ClInclude Include="template-page.h" />
+    <ClInclude Include="template-page2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

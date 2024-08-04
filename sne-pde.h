@@ -10,7 +10,7 @@ using namespace std;
 
 sf::RenderWindow mainWindow;
 map<string, sf::RenderWindow*> windows;
-sf::RenderWindow* activeWindow = &mainWindow;
+sf::RenderWindow* activeWindow = &mainWindow;     
 
 
 sf::Color currentFill = sf::Color(255, 255, 255, 255);
