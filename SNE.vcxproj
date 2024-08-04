@@ -146,6 +146,7 @@
     <ClInclude Include="sne-app.h" />
     <ClInclude Include="sne-application-header.h" />
     <ClInclude Include="sne-demos.h" />
+    <ClInclude Include="sne-elements.h" />
     <ClInclude Include="sne-processing-header.h" />
     <ClInclude Include="sne-image.h" />
     <ClInclude Include="sne-page.h" />

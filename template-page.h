@@ -10,9 +10,12 @@ namespace templatepage {
 	void settings();
 	void setup();
 	void draw();
+	void mousePressed(int mX, int mY);
+	void mouseMoved(int mX, int mY);
+	void keyPressed(string key);
 }
 
-Page templatePage("template-page", &templatepage::settings, &templatepage::setup, &templatepage::draw);
+Page templatePage("template-page", &templatepage::settings, &templatepage::setup, &templatepage::draw, &templatepage::mousePressed, &templatepage::mouseMoved, &templatepage::keyPressed);
 
 
 void templatepage::settings() {
@@ -27,4 +30,17 @@ void templatepage::draw() {
 	primativeShapesDemo();
 	//textDemo();
 	//imageDemo();
+}
+
+
+void templatepage::mousePressed(int mX, int mY) {
+	cout << "Mouse clicked: (" << mX << ", " << mY << ")" << endl;
+}
+
+void templatepage::mouseMoved(int mX, int mY) {
+
+}
+
+void templatepage::keyPressed(string key) {
+
 }

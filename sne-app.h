@@ -15,9 +15,23 @@ public:
 	App() {}
 
 	void draw() {
-		if (activePage != NULL) {
-			activePage->draw();
-		}
+		if (activePage == NULL) return;
+		activePage->draw();
+	}
+
+	void mousePressed(int mX, int mY) {
+		if (activePage == NULL) return;
+		activePage->mousePressed(mX, mY);
+	}
+
+	void mouseMoved(int mX, int mY) {
+		if (activePage == NULL) return;
+		activePage->mouseMoved(mX, mY);
+	}
+
+	void keyPressed(string key) {
+		if (activePage == NULL) return;
+		activePage->keyPressed(key);
 	}
 
 	void addPage(string pathName, Page* page) {
