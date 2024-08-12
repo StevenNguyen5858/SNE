@@ -42,12 +42,13 @@ public:
 		pages[pathName] = page;
 	}
 
+	// Add current page to pageHistory stack, update window title to page name, activate and setup() page.
 	void openPage(Page* page) {
 		activeWindow->setTitle(title + "/" + page->name);
 		pageHistory.push(activePage);
 		activePage = page;
 
-		page->setupF();
+		page->setup();
 	}
 };
 

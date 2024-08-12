@@ -5,6 +5,7 @@
 using namespace std;
 
 
+// Creates primary render window.
 void sneSettings() {
     loadFonts();
     mainWindow.create(sf::VideoMode(400, 400), "SNE");
@@ -53,7 +54,7 @@ void eventHandler() {
 
 int main() {
     sneSettings();
-    router::setupPaging();
+    router::setupRouting();
 
     while (activeWindow->isOpen()) {
         app.draw();

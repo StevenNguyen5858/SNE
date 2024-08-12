@@ -32,6 +32,18 @@ void fill(int greyValue) {
 	currentFill = sf::Color(greyValue, greyValue, greyValue, 255);
 }
 
+void fill(sf::Color c) {
+	currentFill = sf::Color(c.r, c.g, c.b, c.a);
+}
+
+sf::Color color(int r, int g, int b) {
+	return sf::Color(r, g, b, 255);
+}
+
+sf::Color color(int r, int g, int b, int a) {
+	return sf::Color(r, g, b, a);
+}
+
 void noFill() {
 	currentFill = sf::Color::Transparent;
 }
@@ -48,6 +60,10 @@ void stroke(int r, int g, int b) {
 
 void stroke(int greyValue) {
 	currentStroke = sf::Color(greyValue, greyValue, greyValue, 255);
+}
+
+void stroke(sf::Color c) {
+	currentStroke = sf::Color(c.r, c.g, c.b, c.a);
 }
 
 void noStroke() {
